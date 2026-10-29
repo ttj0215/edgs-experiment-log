@@ -1,0 +1,3 @@
+scene,method,seed,iteration,split,psnr,ssim,lpips_splat,gaussians_at_eval,final_gaussians,sfm_gaussians,gaussians_after_init_including_sfm,initial_training_gaussians,run_elapsed_seconds,training_loop_seconds,returncode
+counter,baseline,228,29228,test,29.265922,0.922736,0.162812,572156,572156,155767,955767,800000,3593.138804,3468,0
+counter,unified_v2_relconf,228,29228,test,29.189787,0.922883,0.162532,580180,580180,155767,955767,800000,4045.084903,3644,0
