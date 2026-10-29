@@ -26,19 +26,24 @@ Counter 在 seed=228、ITER 29228、Evaluating test 下的正式结果：
 - [Counter seed228 最终监督报告](reports/counter-seed228-final.md)
 - [Counter 正式结果 CSV](data/counter-seed228-final.csv)
 - [Counter 后期 15 个对应测试点 CSV](data/counter-seed228-late15.csv)
+- [Baseline 原始训练日志](workspace/outputs/counter_seed228_baseline.log)
+- [Unified v2 原始训练日志](workspace/outputs/counter_seed228_unified_v2_relconf.log)
+- [日志同步核验记录与 SHA256](data/log-sync-manifest.json)
 
 ## 原始日志与模型位置
 
-以下是 `edgs-v1` 容器内路径，用于定位证据。原始模型和完整日志仍保留在实验环境中。
+以下是 `edgs-v1` 容器内路径，用于定位证据。完整训练日志按相同目录结构同步到本仓库，仓库路径去掉源路径开头的 `/`。原始模型仍保留在实验环境中。
 
-- Baseline 日志：`/workspace/outputs/counter_seed228_baseline.log`
-- Unified v2 日志：`/workspace/outputs/counter_seed228_unified_v2_relconf.log`
+- Baseline 日志：`/workspace/outputs/counter_seed228_baseline.log` → [仓库副本](workspace/outputs/counter_seed228_baseline.log)
+- Unified v2 日志：`/workspace/outputs/counter_seed228_unified_v2_relconf.log` → [仓库副本](workspace/outputs/counter_seed228_unified_v2_relconf.log)
 - Baseline 模型目录：`/workspace/outputs/edgs_counter_seed228_baseline`
 - Unified v2 模型目录：`/workspace/outputs/edgs_counter_seed228_unified_v2_relconf`
 
 ## 后续更新规则
 
 每次记录注明核验时间、实验名称、seed、已确认的 iteration、明确标记为 test 的指标、Gaussian 数量、日志路径及异常。训练完成需联合核对 ITER 29228 test、ITER 30000 保存、`Training complete.`、最终 PLY 和 checkpoint 文件。
+
+**每次检查进度时一并同步对应原始日志。** 先读取服务器最新文件，再按容器内路径镜像到仓库；保存核验时间、文件字节数、源文件修改时间和 SHA256。文件未变化时核验哈希并保留原字节内容，不把旧日志冒充最新核验。服务器端始终只读。
 
 区分原始日志实读、运行记录、计算得到的差值与用户交接数据。Garden 的部分原始日志尚未独立定位，不将交接数值标成已核验。保留 Counter 的 PSNR 下降和 Bonsai 上 v1 优于 v2 的结果。
 

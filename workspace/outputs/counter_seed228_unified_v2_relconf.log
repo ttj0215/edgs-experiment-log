@@ -1,0 +1,1292 @@
+Output folder: /workspace/outputs/edgs_counter_seed228_unified_v2_relconf
+Reading camera 1/240Reading camera 2/240Reading camera 3/240Reading camera 4/240Reading camera 5/240Reading camera 6/240Reading camera 7/240Reading camera 8/240Reading camera 9/240Reading camera 10/240Reading camera 11/240Reading camera 12/240Reading camera 13/240Reading camera 14/240Reading camera 15/240Reading camera 16/240Reading camera 17/240Reading camera 18/240Reading camera 19/240Reading camera 20/240Reading camera 21/240Reading camera 22/240Reading camera 23/240Reading camera 24/240Reading camera 25/240Reading camera 26/240Reading camera 27/240Reading camera 28/240Reading camera 29/240Reading camera 30/240Reading camera 31/240Reading camera 32/240Reading camera 33/240Reading camera 34/240Reading camera 35/240Reading camera 36/240Reading camera 37/240Reading camera 38/240Reading camera 39/240Reading camera 40/240Reading camera 41/240Reading camera 42/240Reading camera 43/240Reading camera 44/240Reading camera 45/240Reading camera 46/240Reading camera 47/240Reading camera 48/240Reading camera 49/240Reading camera 50/240Reading camera 51/240Reading camera 52/240Reading camera 53/240Reading camera 54/240Reading camera 55/240Reading camera 56/240Reading camera 57/240Reading camera 58/240Reading camera 59/240Reading camera 60/240Reading camera 61/240Reading camera 62/240Reading camera 63/240Reading camera 64/240Reading camera 65/240Reading camera 66/240Reading camera 67/240Reading camera 68/240Reading camera 69/240Reading camera 70/240Reading camera 71/240Reading camera 72/240Reading camera 73/240Reading camera 74/240Reading camera 75/240Reading camera 76/240Reading camera 77/240Reading camera 78/240Reading camera 79/240Reading camera 80/240Reading camera 81/240Reading camera 82/240Reading camera 83/240Reading camera 84/240Reading camera 85/240Reading camera 86/240Reading camera 87/240Reading camera 88/240Reading camera 89/240Reading camera 90/240Reading camera 91/240Reading camera 92/240Reading camera 93/240Reading camera 94/240Reading camera 95/240Reading camera 96/240Reading camera 97/240Reading camera 98/240Reading camera 99/240Reading camera 100/240Reading camera 101/240Reading camera 102/240Reading camera 103/240Reading camera 104/240Reading camera 105/240Reading camera 106/240Reading camera 107/240Reading camera 108/240Reading camera 109/240Reading camera 110/240Reading camera 111/240Reading camera 112/240Reading camera 113/240Reading camera 114/240Reading camera 115/240Reading camera 116/240Reading camera 117/240Reading camera 118/240Reading camera 119/240Reading camera 120/240Reading camera 121/240Reading camera 122/240Reading camera 123/240Reading camera 124/240Reading camera 125/240Reading camera 126/240Reading camera 127/240Reading camera 128/240Reading camera 129/240Reading camera 130/240Reading camera 131/240Reading camera 132/240Reading camera 133/240Reading camera 134/240Reading camera 135/240Reading camera 136/240Reading camera 137/240Reading camera 138/240Reading camera 139/240Reading camera 140/240Reading camera 141/240Reading camera 142/240Reading camera 143/240Reading camera 144/240Reading camera 145/240Reading camera 146/240Reading camera 147/240Reading camera 148/240Reading camera 149/240Reading camera 150/240Reading camera 151/240Reading camera 152/240Reading camera 153/240Reading camera 154/240Reading camera 155/240Reading camera 156/240Reading camera 157/240Reading camera 158/240Reading camera 159/240Reading camera 160/240Reading camera 161/240Reading camera 162/240Reading camera 163/240Reading camera 164/240Reading camera 165/240Reading camera 166/240Reading camera 167/240Reading camera 168/240Reading camera 169/240Reading camera 170/240Reading camera 171/240Reading camera 172/240Reading camera 173/240Reading camera 174/240Reading camera 175/240Reading camera 176/240Reading camera 177/240Reading camera 178/240Reading camera 179/240Reading camera 180/240Reading camera 181/240Reading camera 182/240Reading camera 183/240Reading camera 184/240Reading camera 185/240Reading camera 186/240Reading camera 187/240Reading camera 188/240Reading camera 189/240Reading camera 190/240Reading camera 191/240Reading camera 192/240Reading camera 193/240Reading camera 194/240Reading camera 195/240Reading camera 196/240Reading camera 197/240Reading camera 198/240Reading camera 199/240Reading camera 200/240Reading camera 201/240Reading camera 202/240Reading camera 203/240Reading camera 204/240Reading camera 205/240Reading camera 206/240Reading camera 207/240Reading camera 208/240Reading camera 209/240Reading camera 210/240Reading camera 211/240Reading camera 212/240Reading camera 213/240Reading camera 214/240Reading camera 215/240Reading camera 216/240Reading camera 217/240Reading camera 218/240Reading camera 219/240Reading camera 220/240Reading camera 221/240Reading camera 222/240Reading camera 223/240Reading camera 224/240Reading camera 225/240Reading camera 226/240Reading camera 227/240Reading camera 228/240Reading camera 229/240Reading camera 230/240Reading camera 231/240Reading camera 232/240Reading camera 233/240Reading camera 234/240Reading camera 235/240Reading camera 236/240Reading camera 237/240Reading camera 238/240Reading camera 239/240Reading camera 240/240
+Loading Training Cameras
+[ INFO ] Encountered quite large input images (>1.6K pixels width), rescaling to 1.6K.
+ If this is not desired, please explicitly specify '--resolution/-r' as 1
+Loading Test Cameras
+Number of points at initialisation :  155767
+Preparing train and test sets split...
+Found no test_cameras for resolution 1.0. Move every 8th camera out ouf total 240 train cameras to the test set now
+Done. Now train and test sets contain each 210 and 30 cameras respectively.
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/usr/local/lib/python3.10/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /usr/local/lib/python3.10/dist-packages/lpips/weights/v0.1/vgg.pth
+N_splats_at_init: 155767
+2026-10-28 09:41:29.321 | INFO     | romatch.models.model_zoo.roma_models:roma_model:255 - Using coarse resolution (560, 560), and upsample res (864, 864)
+Once run full roma_model.match warp.shape: torch.Size([1, 560, 560, 4])
+Once run full roma_model.match certainty_warp.shape: torch.Size([1, 560, 560])
+  0%|          | 0/80 [00:00<?, ?it/s]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.60it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.83it/s][A
+100%|██████████| 3/3 [00:01<00:00,  1.70it/s][A100%|██████████| 3/3 [00:01<00:00,  1.71it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.56it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  3.20it/s][A
+100%|██████████| 3/3 [00:00<00:00,  3.73it/s][A100%|██████████| 3/3 [00:00<00:00,  3.47it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=29.73%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=33.77%, changed_vs_baseline=38.98%, conf_geo=0.4679, conf_unified=0.5363, q_geo=0.8175, q_unified=0.9635
+[Confidence] N=10000, mean=0.5363, median=0.5672, min=0.0000, max=0.9736
+[Parallax] N=10000, mean=4.107 deg, median=3.705 deg, <1deg=0.12%, <2deg=2.91%, <5deg=72.92%
+  1%|▏         | 1/80 [00:02<03:40,  2.79s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.07it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.17it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.22it/s][A100%|██████████| 3/3 [00:01<00:00,  2.20it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.80it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.02it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.11it/s][A100%|██████████| 3/3 [00:00<00:00,  7.05it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=34.50%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=34.48%, changed_vs_baseline=37.61%, conf_geo=0.4456, conf_unified=0.5141, q_geo=0.8048, q_unified=0.9610
+[Confidence] N=10000, mean=0.5141, median=0.5511, min=0.0001, max=0.9635
+[Parallax] N=10000, mean=4.044 deg, median=3.504 deg, <1deg=1.31%, <2deg=14.88%, <5deg=69.03%
+  2%|▎         | 2/80 [00:04<02:54,  2.24s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.08it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.89it/s][A
+100%|██████████| 3/3 [00:01<00:00,  1.55it/s][A100%|██████████| 3/3 [00:01<00:00,  1.64it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.20it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.05it/s][A
+100%|██████████| 3/3 [00:02<00:00,  1.01it/s][A100%|██████████| 3/3 [00:02<00:00,  1.04it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=44.51%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=30.70%, changed_vs_baseline=47.21%, conf_geo=0.4601, conf_unified=0.5084, q_geo=0.8462, q_unified=0.9666
+[Confidence] N=10000, mean=0.5084, median=0.5382, min=0.0005, max=0.9691
+[Parallax] N=10000, mean=3.961 deg, median=3.530 deg, <1deg=1.29%, <2deg=11.71%, <5deg=65.80%
+  4%|▍         | 3/80 [00:09<04:33,  3.55s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:02<00:04,  2.00s/it][A
+ 67%|██████▋   | 2/3 [00:02<00:01,  1.12s/it][A
+100%|██████████| 3/3 [00:02<00:00,  1.23it/s][A100%|██████████| 3/3 [00:02<00:00,  1.01it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  5.96it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  5.93it/s][A
+100%|██████████| 3/3 [00:00<00:00,  6.21it/s][A100%|██████████| 3/3 [00:00<00:00,  6.13it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=23.79%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=32.23%, changed_vs_baseline=36.55%, conf_geo=0.4708, conf_unified=0.5321, q_geo=0.8312, q_unified=0.9700
+[Confidence] N=10000, mean=0.5321, median=0.5638, min=0.0061, max=0.9742
+[Parallax] N=10000, mean=4.194 deg, median=4.552 deg, <1deg=0.78%, <2deg=13.84%, <5deg=58.47%
+  5%|▌         | 4/80 [00:13<04:29,  3.54s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.21it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.21it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.24it/s][A100%|██████████| 3/3 [00:01<00:00,  2.23it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.76it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.03it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.13it/s][A100%|██████████| 3/3 [00:00<00:00,  7.06it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=41.44%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=42.09%, changed_vs_baseline=43.54%, conf_geo=0.4616, conf_unified=0.5329, q_geo=0.8137, q_unified=0.9680
+[Confidence] N=10000, mean=0.5329, median=0.5635, min=0.0045, max=0.9632
+[Parallax] N=10000, mean=4.134 deg, median=4.070 deg, <1deg=1.18%, <2deg=17.96%, <5deg=63.10%
+  6%|▋         | 5/80 [00:15<03:39,  2.93s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.37it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.37it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.37it/s][A100%|██████████| 3/3 [00:01<00:00,  2.37it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.28it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.25it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.25it/s][A100%|██████████| 3/3 [00:00<00:00,  7.24it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=38.33%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=27.43%, changed_vs_baseline=39.90%, conf_geo=0.4897, conf_unified=0.5421, q_geo=0.8499, q_unified=0.9644
+[Confidence] N=10000, mean=0.5421, median=0.5794, min=0.0031, max=0.9719
+[Parallax] N=10000, mean=3.387 deg, median=2.708 deg, <1deg=12.46%, <2deg=28.20%, <5deg=66.52%
+  8%|▊         | 6/80 [00:16<03:07,  2.53s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.42it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.44it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.43it/s][A100%|██████████| 3/3 [00:01<00:00,  2.43it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.25it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.24it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.23it/s][A100%|██████████| 3/3 [00:00<00:00,  7.22it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=39.29%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=31.73%, changed_vs_baseline=43.62%, conf_geo=0.4559, conf_unified=0.5240, q_geo=0.8038, q_unified=0.9563
+[Confidence] N=10000, mean=0.5240, median=0.5588, min=0.0017, max=0.9661
+[Parallax] N=10000, mean=3.122 deg, median=2.565 deg, <1deg=13.94%, <2deg=28.80%, <5deg=78.19%
+  9%|▉         | 7/80 [00:18<02:45,  2.26s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.37it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.37it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.37it/s][A100%|██████████| 3/3 [00:01<00:00,  2.37it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.24it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.24it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.24it/s][A100%|██████████| 3/3 [00:00<00:00,  7.23it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=28.17%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=29.14%, changed_vs_baseline=30.44%, conf_geo=0.4561, conf_unified=0.5183, q_geo=0.8095, q_unified=0.9446
+[Confidence] N=10000, mean=0.5183, median=0.5401, min=0.0001, max=0.9641
+[Parallax] N=10000, mean=4.307 deg, median=3.226 deg, <1deg=3.13%, <2deg=14.63%, <5deg=63.63%
+ 10%|█         | 8/80 [00:20<02:31,  2.10s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.28it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.22it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.18it/s][A100%|██████████| 3/3 [00:01<00:00,  2.19it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  5.90it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  5.89it/s][A
+100%|██████████| 3/3 [00:00<00:00,  5.99it/s][A100%|██████████| 3/3 [00:00<00:00,  5.96it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=10.94%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=27.27%, changed_vs_baseline=27.73%, conf_geo=0.4854, conf_unified=0.5420, q_geo=0.8230, q_unified=0.9456
+[Confidence] N=10000, mean=0.5420, median=0.5708, min=0.0005, max=0.9786
+[Parallax] N=10000, mean=5.945 deg, median=5.297 deg, <1deg=0.44%, <2deg=15.48%, <5deg=47.18%
+ 11%|█▏        | 9/80 [00:22<02:25,  2.05s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.13it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.08it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.07it/s][A100%|██████████| 3/3 [00:01<00:00,  2.08it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.60it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  6.59it/s][A
+100%|██████████| 3/3 [00:00<00:00,  6.58it/s][A100%|██████████| 3/3 [00:00<00:00,  6.57it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=11.79%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=28.11%, changed_vs_baseline=29.11%, conf_geo=0.4817, conf_unified=0.5278, q_geo=0.8656, q_unified=0.9732
+[Confidence] N=10000, mean=0.5278, median=0.5406, min=0.0046, max=0.9867
+[Parallax] N=10000, mean=6.952 deg, median=6.822 deg, <1deg=0.00%, <2deg=3.67%, <5deg=21.43%
+ 12%|█▎        | 10/80 [00:24<02:22,  2.03s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.25it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.41it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.53it/s][A100%|██████████| 3/3 [00:01<00:00,  2.47it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  9.00it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.80it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.72it/s][A100%|██████████| 3/3 [00:00<00:00,  8.75it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=38.50%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=39.34%, changed_vs_baseline=39.57%, conf_geo=0.4016, conf_unified=0.5046, q_geo=0.7596, q_unified=0.9651
+[Confidence] N=10000, mean=0.5046, median=0.5292, min=0.0015, max=0.9739
+[Parallax] N=10000, mean=5.188 deg, median=3.213 deg, <1deg=3.36%, <2deg=21.34%, <5deg=73.29%
+ 14%|█▍        | 11/80 [00:25<02:11,  1.90s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.65it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.62it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.58it/s][A100%|██████████| 3/3 [00:01<00:00,  2.59it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.22it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.23it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.24it/s][A100%|██████████| 3/3 [00:00<00:00,  7.23it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=22.23%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=30.17%, changed_vs_baseline=33.35%, conf_geo=0.4456, conf_unified=0.4930, q_geo=0.8524, q_unified=0.9652
+[Confidence] N=10000, mean=0.4930, median=0.5211, min=0.0096, max=0.9580
+[Parallax] N=10000, mean=2.388 deg, median=1.596 deg, <1deg=0.40%, <2deg=57.01%, <5deg=90.86%
+ 15%|█▌        | 12/80 [00:27<02:04,  1.82s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.36it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.33it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.32it/s][A100%|██████████| 3/3 [00:01<00:00,  2.32it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.59it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  6.76it/s][A
+100%|██████████| 3/3 [00:00<00:00,  6.97it/s][A100%|██████████| 3/3 [00:00<00:00,  6.89it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=30.07%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=28.01%, changed_vs_baseline=33.25%, conf_geo=0.4829, conf_unified=0.5455, q_geo=0.8376, q_unified=0.9635
+[Confidence] N=10000, mean=0.5455, median=0.5898, min=0.0001, max=0.9626
+[Parallax] N=10000, mean=3.564 deg, median=2.920 deg, <1deg=2.45%, <2deg=25.76%, <5deg=74.36%
+ 16%|█▋        | 13/80 [00:29<02:01,  1.82s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.34it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.33it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.35it/s][A100%|██████████| 3/3 [00:01<00:00,  2.34it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.63it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  6.60it/s][A
+100%|██████████| 3/3 [00:00<00:00,  6.60it/s][A100%|██████████| 3/3 [00:00<00:00,  6.59it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=13.88%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=25.69%, changed_vs_baseline=21.86%, conf_geo=0.5001, conf_unified=0.5712, q_geo=0.8238, q_unified=0.9509
+[Confidence] N=10000, mean=0.5712, median=0.6033, min=0.0001, max=0.9749
+[Parallax] N=10000, mean=8.980 deg, median=5.273 deg, <1deg=0.12%, <2deg=13.00%, <5deg=49.00%
+ 18%|█▊        | 14/80 [00:31<01:59,  1.81s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.33it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.31it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.32it/s][A100%|██████████| 3/3 [00:01<00:00,  2.32it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.57it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  6.56it/s][A
+100%|██████████| 3/3 [00:00<00:00,  6.56it/s][A100%|██████████| 3/3 [00:00<00:00,  6.55it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=2.26%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=24.36%, changed_vs_baseline=24.18%, conf_geo=0.5401, conf_unified=0.5761, q_geo=0.8920, q_unified=0.9715
+[Confidence] N=10000, mean=0.5761, median=0.5940, min=0.0076, max=0.9793
+[Parallax] N=10000, mean=10.500 deg, median=9.999 deg, <1deg=0.00%, <2deg=0.00%, <5deg=0.43%
+ 19%|█▉        | 15/80 [00:32<01:58,  1.82s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.19it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.17it/s][A
+100%|██████████| 3/3 [00:01<00:00,  1.99it/s][A100%|██████████| 3/3 [00:01<00:00,  2.04it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  3.09it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  3.06it/s][A
+100%|██████████| 3/3 [00:00<00:00,  3.14it/s][A100%|██████████| 3/3 [00:00<00:00,  3.12it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=42.63%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=24.13%, changed_vs_baseline=44.09%, conf_geo=0.6035, conf_unified=0.6379, q_geo=0.9024, q_unified=0.9822
+[Confidence] N=10000, mean=0.6379, median=0.6681, min=0.0013, max=0.9839
+[Parallax] N=10000, mean=4.599 deg, median=4.253 deg, <1deg=0.00%, <2deg=0.14%, <5deg=61.68%
+ 20%|██        | 16/80 [00:35<02:11,  2.05s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.24it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.41it/s][A
+100%|██████████| 3/3 [00:01<00:00,  1.60it/s][A100%|██████████| 3/3 [00:01<00:00,  1.52it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  5.90it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  5.91it/s][A
+100%|██████████| 3/3 [00:00<00:00,  5.91it/s][A100%|██████████| 3/3 [00:00<00:00,  5.90it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=22.93%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=12.46%, changed_vs_baseline=27.60%, conf_geo=0.6122, conf_unified=0.6354, q_geo=0.9249, q_unified=0.9716
+[Confidence] N=10000, mean=0.6354, median=0.6472, min=0.0000, max=0.9781
+[Parallax] N=10000, mean=4.911 deg, median=3.632 deg, <1deg=0.10%, <2deg=0.14%, <5deg=65.72%
+ 21%|██▏       | 17/80 [00:38<02:18,  2.20s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.06it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.16it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.25it/s][A100%|██████████| 3/3 [00:01<00:00,  2.22it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.29it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.25it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.26it/s][A100%|██████████| 3/3 [00:00<00:00,  7.25it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=17.38%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=18.48%, changed_vs_baseline=23.97%, conf_geo=0.5066, conf_unified=0.5468, q_geo=0.8649, q_unified=0.9537
+[Confidence] N=10000, mean=0.5468, median=0.5749, min=0.0000, max=0.9655
+[Parallax] N=10000, mean=4.843 deg, median=5.377 deg, <1deg=0.11%, <2deg=4.29%, <5deg=39.44%
+ 22%|██▎       | 18/80 [00:39<02:09,  2.09s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.37it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.39it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.40it/s][A100%|██████████| 3/3 [00:01<00:00,  2.39it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.59it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  6.57it/s][A
+100%|██████████| 3/3 [00:00<00:00,  6.56it/s][A100%|██████████| 3/3 [00:00<00:00,  6.56it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=25.59%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=24.33%, changed_vs_baseline=29.68%, conf_geo=0.4961, conf_unified=0.5479, q_geo=0.8439, q_unified=0.9478
+[Confidence] N=10000, mean=0.5479, median=0.5782, min=0.0004, max=0.9739
+[Parallax] N=10000, mean=4.304 deg, median=3.540 deg, <1deg=0.00%, <2deg=7.02%, <5deg=79.36%
+ 24%|██▍       | 19/80 [00:41<02:02,  2.00s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.04it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.13it/s][A
+100%|██████████| 3/3 [00:03<00:00,  1.05s/it][A100%|██████████| 3/3 [00:03<00:00,  1.02s/it]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.09it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.09it/s][A
+100%|██████████| 3/3 [00:02<00:00,  1.41it/s][A100%|██████████| 3/3 [00:02<00:00,  1.31it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=31.53%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=41.58%, changed_vs_baseline=42.31%, conf_geo=0.4253, conf_unified=0.5103, q_geo=0.7962, q_unified=0.9674
+[Confidence] N=10000, mean=0.5103, median=0.5341, min=0.0006, max=0.9647
+[Parallax] N=10000, mean=4.495 deg, median=4.422 deg, <1deg=0.00%, <2deg=6.29%, <5deg=64.98%
+ 25%|██▌       | 20/80 [00:47<03:03,  3.07s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.81it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.99it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.05it/s][A100%|██████████| 3/3 [00:01<00:00,  2.01it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  4.74it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  5.30it/s][A
+100%|██████████| 3/3 [00:00<00:00,  5.55it/s][A100%|██████████| 3/3 [00:00<00:00,  5.41it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=34.91%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=36.50%, changed_vs_baseline=39.43%, conf_geo=0.4392, conf_unified=0.5112, q_geo=0.8219, q_unified=0.9738
+[Confidence] N=10000, mean=0.5112, median=0.5211, min=0.0050, max=0.9717
+[Parallax] N=10000, mean=3.732 deg, median=3.178 deg, <1deg=0.05%, <2deg=31.34%, <5deg=81.16%
+ 26%|██▋       | 21/80 [00:49<02:44,  2.79s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.68it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.18it/s][A
+100%|██████████| 3/3 [00:02<00:00,  1.00s/it][A100%|██████████| 3/3 [00:02<00:00,  1.07it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  3.03it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  3.71it/s][A
+100%|██████████| 3/3 [00:00<00:00,  4.42it/s][A100%|██████████| 3/3 [00:00<00:00,  4.09it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=27.38%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=26.12%, changed_vs_baseline=30.96%, conf_geo=0.4895, conf_unified=0.5434, q_geo=0.8376, q_unified=0.9543
+[Confidence] N=10000, mean=0.5434, median=0.5631, min=0.0000, max=0.9709
+[Parallax] N=10000, mean=4.227 deg, median=4.436 deg, <1deg=0.28%, <2deg=9.10%, <5deg=57.77%
+ 28%|██▊       | 22/80 [00:53<02:57,  3.05s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.23it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.31it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.34it/s][A100%|██████████| 3/3 [00:01<00:00,  2.32it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.23it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.24it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.26it/s][A100%|██████████| 3/3 [00:00<00:00,  7.24it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=25.76%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=18.11%, changed_vs_baseline=27.23%, conf_geo=0.5827, conf_unified=0.6148, q_geo=0.8948, q_unified=0.9633
+[Confidence] N=10000, mean=0.6148, median=0.6385, min=0.0000, max=0.9805
+[Parallax] N=10000, mean=5.358 deg, median=5.760 deg, <1deg=0.05%, <2deg=1.82%, <5deg=39.10%
+ 29%|██▉       | 23/80 [00:54<02:32,  2.67s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.60it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.67it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.74it/s][A100%|██████████| 3/3 [00:01<00:00,  2.71it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.63it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.64it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.64it/s][A100%|██████████| 3/3 [00:00<00:00,  8.62it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=9.03%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=23.43%, changed_vs_baseline=21.48%, conf_geo=0.4498, conf_unified=0.4860, q_geo=0.8689, q_unified=0.9666
+[Confidence] N=10000, mean=0.4860, median=0.4953, min=0.0001, max=0.9851
+[Parallax] N=10000, mean=4.280 deg, median=3.954 deg, <1deg=0.00%, <2deg=8.66%, <5deg=75.75%
+ 30%|███       | 24/80 [00:56<02:10,  2.32s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.71it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.71it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.65it/s][A100%|██████████| 3/3 [00:01<00:00,  2.66it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.50it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  6.11it/s][A
+100%|██████████| 3/3 [00:00<00:00,  5.49it/s][A100%|██████████| 3/3 [00:00<00:00,  5.67it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=16.18%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=21.25%, changed_vs_baseline=19.22%, conf_geo=0.5170, conf_unified=0.5756, q_geo=0.8504, q_unified=0.9569
+[Confidence] N=10000, mean=0.5756, median=0.5895, min=0.0025, max=0.9800
+[Parallax] N=10000, mean=7.829 deg, median=3.853 deg, <1deg=2.08%, <2deg=15.55%, <5deg=62.47%
+ 31%|███▏      | 25/80 [00:58<01:58,  2.15s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.64it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.88it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.04it/s][A100%|██████████| 3/3 [00:01<00:00,  1.96it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.72it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.03it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.12it/s][A100%|██████████| 3/3 [00:00<00:00,  7.05it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=28.58%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=29.82%, changed_vs_baseline=27.67%, conf_geo=0.4855, conf_unified=0.5747, q_geo=0.8069, q_unified=0.9616
+[Confidence] N=10000, mean=0.5747, median=0.6040, min=0.0004, max=0.9717
+[Parallax] N=10000, mean=7.919 deg, median=2.942 deg, <1deg=0.78%, <2deg=21.40%, <5deg=74.25%
+ 32%|███▎      | 26/80 [01:00<01:54,  2.11s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.66it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.69it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.70it/s][A100%|██████████| 3/3 [00:01<00:00,  2.69it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.98it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.35it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.48it/s][A100%|██████████| 3/3 [00:00<00:00,  8.39it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=34.91%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=31.60%, changed_vs_baseline=35.19%, conf_geo=0.4626, conf_unified=0.5387, q_geo=0.7918, q_unified=0.9521
+[Confidence] N=10000, mean=0.5387, median=0.5416, min=0.0048, max=0.9838
+[Parallax] N=10000, mean=7.626 deg, median=6.952 deg, <1deg=7.63%, <2deg=21.22%, <5deg=42.98%
+ 34%|███▍      | 27/80 [01:01<01:42,  1.94s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.68it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.64it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.58it/s][A100%|██████████| 3/3 [00:01<00:00,  2.60it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.92it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.91it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.91it/s][A100%|██████████| 3/3 [00:00<00:00,  7.90it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=39.90%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=28.58%, changed_vs_baseline=40.67%, conf_geo=0.5283, conf_unified=0.5708, q_geo=0.8797, q_unified=0.9710
+[Confidence] N=10000, mean=0.5708, median=0.5900, min=0.0010, max=0.9826
+[Parallax] N=10000, mean=2.874 deg, median=2.850 deg, <1deg=5.21%, <2deg=28.28%, <5deg=92.96%
+ 35%|███▌      | 28/80 [01:03<01:35,  1.84s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.37it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.33it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.33it/s][A100%|██████████| 3/3 [00:01<00:00,  2.33it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.26it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.26it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.53it/s][A100%|██████████| 3/3 [00:00<00:00,  7.45it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=27.13%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=26.55%, changed_vs_baseline=33.27%, conf_geo=0.5203, conf_unified=0.5672, q_geo=0.8525, q_unified=0.9607
+[Confidence] N=10000, mean=0.5672, median=0.5874, min=0.0002, max=0.9876
+[Parallax] N=10000, mean=3.097 deg, median=2.938 deg, <1deg=3.21%, <2deg=20.05%, <5deg=88.74%
+ 36%|███▋      | 29/80 [01:05<01:32,  1.81s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.28it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.14it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.13it/s][A100%|██████████| 3/3 [00:01<00:00,  2.15it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.28it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  6.45it/s][A
+100%|██████████| 3/3 [00:00<00:00,  6.51it/s][A100%|██████████| 3/3 [00:00<00:00,  6.47it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=45.44%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=33.25%, changed_vs_baseline=44.98%, conf_geo=0.4934, conf_unified=0.5528, q_geo=0.8406, q_unified=0.9702
+[Confidence] N=10000, mean=0.5528, median=0.5653, min=0.0085, max=0.9879
+[Parallax] N=10000, mean=4.170 deg, median=3.584 deg, <1deg=3.82%, <2deg=12.76%, <5deg=63.16%
+ 38%|███▊      | 30/80 [01:06<01:32,  1.85s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.21it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.22it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.29it/s][A100%|██████████| 3/3 [00:01<00:00,  2.27it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.26it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.25it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.25it/s][A100%|██████████| 3/3 [00:00<00:00,  7.24it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=45.09%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=33.28%, changed_vs_baseline=42.38%, conf_geo=0.4842, conf_unified=0.5412, q_geo=0.8338, q_unified=0.9710
+[Confidence] N=10000, mean=0.5412, median=0.5669, min=0.0069, max=0.9793
+[Parallax] N=10000, mean=3.567 deg, median=3.365 deg, <1deg=5.24%, <2deg=16.36%, <5deg=78.38%
+ 39%|███▉      | 31/80 [01:08<01:30,  1.84s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.45it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.44it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.41it/s][A100%|██████████| 3/3 [00:01<00:00,  2.42it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.64it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  6.58it/s][A
+100%|██████████| 3/3 [00:00<00:00,  6.73it/s][A100%|██████████| 3/3 [00:00<00:00,  6.68it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=50.60%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=39.76%, changed_vs_baseline=44.94%, conf_geo=0.4411, conf_unified=0.5126, q_geo=0.8142, q_unified=0.9724
+[Confidence] N=10000, mean=0.5126, median=0.5260, min=0.0013, max=0.9755
+[Parallax] N=10000, mean=6.372 deg, median=5.439 deg, <1deg=2.55%, <2deg=10.75%, <5deg=46.45%
+ 40%|████      | 32/80 [01:10<01:27,  1.81s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.34it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.31it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.10it/s][A100%|██████████| 3/3 [00:01<00:00,  2.16it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  4.64it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  4.58it/s][A
+100%|██████████| 3/3 [00:00<00:00,  5.11it/s][A100%|██████████| 3/3 [00:00<00:00,  4.95it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=14.51%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=40.18%, changed_vs_baseline=37.02%, conf_geo=0.4061, conf_unified=0.4584, q_geo=0.8407, q_unified=0.9736
+[Confidence] N=10000, mean=0.4584, median=0.4557, min=0.0016, max=0.9547
+[Parallax] N=10000, mean=8.676 deg, median=7.763 deg, <1deg=0.00%, <2deg=2.82%, <5deg=10.42%
+ 41%|████▏     | 33/80 [01:12<01:28,  1.89s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.05it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.10it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.20it/s][A100%|██████████| 3/3 [00:01<00:00,  2.17it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.26it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.25it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.24it/s][A100%|██████████| 3/3 [00:00<00:00,  7.23it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=45.56%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=38.30%, changed_vs_baseline=51.33%, conf_geo=0.3930, conf_unified=0.4477, q_geo=0.8225, q_unified=0.9700
+[Confidence] N=10000, mean=0.4477, median=0.4504, min=0.0006, max=0.9492
+[Parallax] N=10000, mean=4.875 deg, median=4.566 deg, <1deg=0.12%, <2deg=1.84%, <5deg=52.55%
+ 42%|████▎     | 34/80 [01:14<01:26,  1.89s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.42it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.48it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.50it/s][A100%|██████████| 3/3 [00:01<00:00,  2.48it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.28it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.28it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.27it/s][A100%|██████████| 3/3 [00:00<00:00,  7.26it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=30.37%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=28.52%, changed_vs_baseline=31.04%, conf_geo=0.5037, conf_unified=0.5619, q_geo=0.8484, q_unified=0.9700
+[Confidence] N=10000, mean=0.5619, median=0.5921, min=0.0001, max=0.9836
+[Parallax] N=10000, mean=5.935 deg, median=3.759 deg, <1deg=1.83%, <2deg=8.69%, <5deg=71.82%
+ 44%|████▍     | 35/80 [01:16<01:22,  1.83s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.36it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.36it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.38it/s][A100%|██████████| 3/3 [00:01<00:00,  2.38it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.24it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.27it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.27it/s][A100%|██████████| 3/3 [00:00<00:00,  7.25it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=21.00%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=24.10%, changed_vs_baseline=28.97%, conf_geo=0.5105, conf_unified=0.5578, q_geo=0.8620, q_unified=0.9681
+[Confidence] N=10000, mean=0.5578, median=0.5763, min=0.0001, max=0.9845
+[Parallax] N=10000, mean=3.267 deg, median=3.163 deg, <1deg=2.09%, <2deg=12.90%, <5deg=88.92%
+ 45%|████▌     | 36/80 [01:17<01:19,  1.80s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.52it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.56it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.54it/s][A100%|██████████| 3/3 [00:01<00:00,  2.54it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.90it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.92it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.93it/s][A100%|██████████| 3/3 [00:00<00:00,  7.91it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=44.02%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=31.40%, changed_vs_baseline=46.93%, conf_geo=0.4938, conf_unified=0.5575, q_geo=0.8186, q_unified=0.9596
+[Confidence] N=10000, mean=0.5575, median=0.5969, min=0.0024, max=0.9900
+[Parallax] N=10000, mean=4.275 deg, median=3.710 deg, <1deg=1.52%, <2deg=16.38%, <5deg=70.32%
+ 46%|████▋     | 37/80 [01:19<01:15,  1.75s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.61it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.66it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.66it/s][A100%|██████████| 3/3 [00:01<00:00,  2.65it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.65it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.63it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.63it/s][A100%|██████████| 3/3 [00:00<00:00,  8.62it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=36.07%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=32.08%, changed_vs_baseline=42.64%, conf_geo=0.4774, conf_unified=0.5444, q_geo=0.8236, q_unified=0.9682
+[Confidence] N=10000, mean=0.5444, median=0.5742, min=0.0003, max=0.9823
+[Parallax] N=10000, mean=3.695 deg, median=2.994 deg, <1deg=8.11%, <2deg=28.48%, <5deg=66.60%
+ 48%|████▊     | 38/80 [01:21<01:10,  1.69s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.61it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.56it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.53it/s][A100%|██████████| 3/3 [00:01<00:00,  2.54it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.25it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.27it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.28it/s][A100%|██████████| 3/3 [00:00<00:00,  7.26it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=34.07%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=30.33%, changed_vs_baseline=38.85%, conf_geo=0.4886, conf_unified=0.5452, q_geo=0.8321, q_unified=0.9631
+[Confidence] N=10000, mean=0.5452, median=0.5856, min=0.0002, max=0.9690
+[Parallax] N=10000, mean=3.832 deg, median=3.262 deg, <1deg=0.65%, <2deg=15.60%, <5deg=69.18%
+ 49%|████▉     | 39/80 [01:22<01:08,  1.68s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.43it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.39it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.45it/s][A100%|██████████| 3/3 [00:01<00:00,  2.43it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.91it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.91it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.91it/s][A100%|██████████| 3/3 [00:00<00:00,  7.90it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=8.80%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=40.87%, changed_vs_baseline=39.72%, conf_geo=0.3603, conf_unified=0.4178, q_geo=0.8123, q_unified=0.9583
+[Confidence] N=10000, mean=0.4178, median=0.4081, min=0.0004, max=0.9788
+[Parallax] N=10000, mean=8.577 deg, median=8.233 deg, <1deg=0.00%, <2deg=0.42%, <5deg=11.48%
+ 50%|█████     | 40/80 [01:24<01:07,  1.68s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.52it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.52it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.55it/s][A100%|██████████| 3/3 [00:01<00:00,  2.54it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.70it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.68it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.67it/s][A100%|██████████| 3/3 [00:00<00:00,  8.66it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=33.21%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=36.77%, changed_vs_baseline=38.59%, conf_geo=0.3626, conf_unified=0.4281, q_geo=0.7987, q_unified=0.9624
+[Confidence] N=10000, mean=0.4281, median=0.4206, min=0.0003, max=0.9674
+[Parallax] N=10000, mean=4.867 deg, median=4.045 deg, <1deg=0.79%, <2deg=10.93%, <5deg=64.73%
+ 51%|█████▏    | 41/80 [01:26<01:04,  1.65s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.69it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.70it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.70it/s][A100%|██████████| 3/3 [00:01<00:00,  2.70it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.89it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.92it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.93it/s][A100%|██████████| 3/3 [00:00<00:00,  7.91it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=35.50%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=35.17%, changed_vs_baseline=35.31%, conf_geo=0.4109, conf_unified=0.4845, q_geo=0.8041, q_unified=0.9699
+[Confidence] N=10000, mean=0.4845, median=0.4939, min=0.0005, max=0.9804
+[Parallax] N=10000, mean=3.499 deg, median=2.487 deg, <1deg=4.87%, <2deg=27.33%, <5deg=82.07%
+ 52%|█████▎    | 42/80 [01:27<01:01,  1.62s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.50it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.47it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.43it/s][A100%|██████████| 3/3 [00:01<00:00,  2.44it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.24it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.26it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.26it/s][A100%|██████████| 3/3 [00:00<00:00,  7.24it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=43.29%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=32.64%, changed_vs_baseline=43.19%, conf_geo=0.4657, conf_unified=0.5306, q_geo=0.8126, q_unified=0.9580
+[Confidence] N=10000, mean=0.5306, median=0.5643, min=0.0004, max=0.9735
+[Parallax] N=10000, mean=2.852 deg, median=2.371 deg, <1deg=8.63%, <2deg=34.23%, <5deg=86.40%
+ 54%|█████▍    | 43/80 [01:29<01:01,  1.65s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.38it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.45it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.45it/s][A100%|██████████| 3/3 [00:01<00:00,  2.44it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.24it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.25it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.39it/s][A100%|██████████| 3/3 [00:00<00:00,  7.34it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=26.70%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=36.86%, changed_vs_baseline=40.08%, conf_geo=0.4694, conf_unified=0.5330, q_geo=0.8303, q_unified=0.9634
+[Confidence] N=10000, mean=0.5330, median=0.5864, min=0.0028, max=0.9693
+[Parallax] N=10000, mean=4.048 deg, median=3.757 deg, <1deg=0.25%, <2deg=16.05%, <5deg=69.31%
+ 55%|█████▌    | 44/80 [01:31<01:00,  1.67s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.50it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.64it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.66it/s][A100%|██████████| 3/3 [00:01<00:00,  2.64it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.01it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.94it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.92it/s][A100%|██████████| 3/3 [00:00<00:00,  7.92it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=36.23%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=35.21%, changed_vs_baseline=42.94%, conf_geo=0.4601, conf_unified=0.5384, q_geo=0.8029, q_unified=0.9592
+[Confidence] N=10000, mean=0.5384, median=0.5798, min=0.0009, max=0.9807
+[Parallax] N=10000, mean=5.170 deg, median=4.901 deg, <1deg=1.26%, <2deg=10.22%, <5deg=51.21%
+ 56%|█████▋    | 45/80 [01:32<00:57,  1.64s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.38it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.31it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.34it/s][A100%|██████████| 3/3 [00:01<00:00,  2.33it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.25it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.24it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.24it/s][A100%|██████████| 3/3 [00:00<00:00,  7.23it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=48.21%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=33.54%, changed_vs_baseline=43.12%, conf_geo=0.4778, conf_unified=0.5427, q_geo=0.8220, q_unified=0.9608
+[Confidence] N=10000, mean=0.5427, median=0.5645, min=0.0001, max=0.9747
+[Parallax] N=10000, mean=3.320 deg, median=2.649 deg, <1deg=7.22%, <2deg=28.81%, <5deg=70.13%
+ 57%|█████▊    | 46/80 [01:34<00:57,  1.68s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.34it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.52it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.69it/s][A100%|██████████| 3/3 [00:01<00:00,  2.62it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.78it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.70it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.67it/s][A100%|██████████| 3/3 [00:00<00:00,  8.67it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=51.95%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=33.41%, changed_vs_baseline=43.88%, conf_geo=0.4603, conf_unified=0.5197, q_geo=0.8130, q_unified=0.9457
+[Confidence] N=10000, mean=0.5197, median=0.5257, min=0.0003, max=0.9765
+[Parallax] N=10000, mean=3.293 deg, median=3.545 deg, <1deg=15.29%, <2deg=34.67%, <5deg=73.44%
+ 59%|█████▉    | 47/80 [01:35<00:54,  1.64s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.83it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.80it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.70it/s][A100%|██████████| 3/3 [00:01<00:00,  2.73it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.88it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.90it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.89it/s][A100%|██████████| 3/3 [00:00<00:00,  7.88it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=24.90%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=35.32%, changed_vs_baseline=35.39%, conf_geo=0.4629, conf_unified=0.5185, q_geo=0.8370, q_unified=0.9709
+[Confidence] N=10000, mean=0.5185, median=0.5169, min=0.0030, max=0.9801
+[Parallax] N=10000, mean=3.174 deg, median=3.273 deg, <1deg=5.64%, <2deg=20.58%, <5deg=91.09%
+ 60%|██████    | 48/80 [01:37<00:51,  1.61s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.49it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.48it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.48it/s][A100%|██████████| 3/3 [00:01<00:00,  2.48it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.24it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.25it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.25it/s][A100%|██████████| 3/3 [00:00<00:00,  7.24it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=44.70%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=36.31%, changed_vs_baseline=44.99%, conf_geo=0.4586, conf_unified=0.5362, q_geo=0.7999, q_unified=0.9622
+[Confidence] N=10000, mean=0.5362, median=0.5437, min=0.0008, max=0.9708
+[Parallax] N=10000, mean=4.584 deg, median=4.271 deg, <1deg=0.93%, <2deg=7.14%, <5deg=54.92%
+ 61%|██████▏   | 49/80 [01:39<00:50,  1.64s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.38it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.44it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.46it/s][A100%|██████████| 3/3 [00:01<00:00,  2.45it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.22it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.25it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.26it/s][A100%|██████████| 3/3 [00:00<00:00,  7.24it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=17.88%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=22.60%, changed_vs_baseline=24.05%, conf_geo=0.4838, conf_unified=0.5307, q_geo=0.8651, q_unified=0.9648
+[Confidence] N=10000, mean=0.5307, median=0.5401, min=0.0003, max=0.9679
+[Parallax] N=10000, mean=4.948 deg, median=5.520 deg, <1deg=0.07%, <2deg=3.68%, <5deg=44.30%
+ 62%|██████▎   | 50/80 [01:40<00:49,  1.66s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.45it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.39it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.38it/s][A100%|██████████| 3/3 [00:01<00:00,  2.39it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.24it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.25it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.24it/s][A100%|██████████| 3/3 [00:00<00:00,  7.23it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=33.50%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=29.48%, changed_vs_baseline=34.67%, conf_geo=0.4903, conf_unified=0.5486, q_geo=0.8423, q_unified=0.9610
+[Confidence] N=10000, mean=0.5486, median=0.5768, min=0.0006, max=0.9600
+[Parallax] N=10000, mean=3.409 deg, median=3.261 deg, <1deg=1.58%, <2deg=12.30%, <5deg=88.31%
+ 64%|██████▍   | 51/80 [01:42<00:48,  1.68s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.38it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.45it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.49it/s][A100%|██████████| 3/3 [00:01<00:00,  2.47it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.04it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.99it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.07it/s][A100%|██████████| 3/3 [00:00<00:00,  8.04it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=39.41%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=34.43%, changed_vs_baseline=47.88%, conf_geo=0.4536, conf_unified=0.5256, q_geo=0.7974, q_unified=0.9559
+[Confidence] N=10000, mean=0.5256, median=0.5535, min=0.0001, max=0.9571
+[Parallax] N=10000, mean=3.478 deg, median=2.859 deg, <1deg=10.18%, <2deg=26.49%, <5deg=70.24%
+ 65%|██████▌   | 52/80 [01:44<00:46,  1.67s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.72it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.65it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.59it/s][A100%|██████████| 3/3 [00:01<00:00,  2.61it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.23it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.24it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.25it/s][A100%|██████████| 3/3 [00:00<00:00,  7.23it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=32.39%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=36.60%, changed_vs_baseline=42.63%, conf_geo=0.4615, conf_unified=0.5400, q_geo=0.8062, q_unified=0.9675
+[Confidence] N=10000, mean=0.5400, median=0.5774, min=0.0009, max=0.9635
+[Parallax] N=10000, mean=3.891 deg, median=3.378 deg, <1deg=1.00%, <2deg=13.40%, <5deg=75.31%
+ 66%|██████▋   | 53/80 [01:45<00:44,  1.66s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.36it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.37it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.56it/s][A100%|██████████| 3/3 [00:01<00:00,  2.50it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  9.91it/s][A
+100%|██████████| 3/3 [00:00<00:00,  9.67it/s][A100%|██████████| 3/3 [00:00<00:00,  9.70it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=27.09%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=35.56%, changed_vs_baseline=41.99%, conf_geo=0.4704, conf_unified=0.5380, q_geo=0.8201, q_unified=0.9652
+[Confidence] N=10000, mean=0.5380, median=0.5620, min=0.0001, max=0.9689
+[Parallax] N=10000, mean=3.303 deg, median=3.387 deg, <1deg=4.25%, <2deg=18.77%, <5deg=87.99%
+ 68%|██████▊   | 54/80 [01:47<00:42,  1.63s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.79it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.81it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.92it/s][A100%|██████████| 3/3 [00:01<00:00,  2.89it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  9.44it/s][A
+100%|██████████| 3/3 [00:00<00:00,  9.72it/s][A100%|██████████| 3/3 [00:00<00:00,  9.67it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=31.13%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=35.20%, changed_vs_baseline=44.57%, conf_geo=0.4590, conf_unified=0.5256, q_geo=0.8201, q_unified=0.9711
+[Confidence] N=10000, mean=0.5256, median=0.5344, min=0.0003, max=0.9800
+[Parallax] N=10000, mean=5.216 deg, median=5.569 deg, <1deg=1.96%, <2deg=12.68%, <5deg=46.03%
+ 69%|██████▉   | 55/80 [01:48<00:39,  1.56s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.57it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.50it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.64it/s][A100%|██████████| 3/3 [00:01<00:00,  2.61it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.80it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.87it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.94it/s][A100%|██████████| 3/3 [00:00<00:00,  8.90it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=18.78%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=38.10%, changed_vs_baseline=32.39%, conf_geo=0.4074, conf_unified=0.4670, q_geo=0.8203, q_unified=0.9768
+[Confidence] N=10000, mean=0.4670, median=0.4711, min=0.0005, max=0.9663
+[Parallax] N=10000, mean=4.925 deg, median=5.033 deg, <1deg=0.40%, <2deg=11.21%, <5deg=48.74%
+ 70%|███████   | 56/80 [01:50<00:37,  1.56s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.63it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.55it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.64it/s][A100%|██████████| 3/3 [00:01<00:00,  2.62it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.59it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.59it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.60it/s][A100%|██████████| 3/3 [00:00<00:00,  8.58it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=25.11%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=31.19%, changed_vs_baseline=37.18%, conf_geo=0.4528, conf_unified=0.5003, q_geo=0.8604, q_unified=0.9737
+[Confidence] N=10000, mean=0.5003, median=0.5074, min=0.0006, max=0.9801
+[Parallax] N=10000, mean=5.061 deg, median=4.788 deg, <1deg=0.00%, <2deg=14.73%, <5deg=55.48%
+ 71%|███████▏  | 57/80 [01:51<00:35,  1.56s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.69it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.75it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.79it/s][A100%|██████████| 3/3 [00:01<00:00,  2.77it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  9.36it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  9.09it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.88it/s][A100%|██████████| 3/3 [00:00<00:00,  8.94it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=53.69%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=27.08%, changed_vs_baseline=50.75%, conf_geo=0.4680, conf_unified=0.5274, q_geo=0.8296, q_unified=0.9545
+[Confidence] N=10000, mean=0.5274, median=0.5308, min=0.0001, max=0.9775
+[Parallax] N=10000, mean=3.711 deg, median=2.805 deg, <1deg=8.43%, <2deg=22.81%, <5deg=69.01%
+ 72%|███████▎  | 58/80 [01:53<00:33,  1.53s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.65it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.66it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.66it/s][A100%|██████████| 3/3 [00:01<00:00,  2.66it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.90it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.97it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.11it/s][A100%|██████████| 3/3 [00:00<00:00,  8.05it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=34.02%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=38.51%, changed_vs_baseline=42.13%, conf_geo=0.4461, conf_unified=0.5193, q_geo=0.8074, q_unified=0.9658
+[Confidence] N=10000, mean=0.5193, median=0.5378, min=0.0011, max=0.9844
+[Parallax] N=10000, mean=3.879 deg, median=3.815 deg, <1deg=0.00%, <2deg=14.86%, <5deg=69.10%
+ 74%|███████▍  | 59/80 [01:54<00:32,  1.54s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.57it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.57it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.53it/s][A100%|██████████| 3/3 [00:01<00:00,  2.54it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.87it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.88it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.89it/s][A100%|██████████| 3/3 [00:00<00:00,  7.87it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=46.22%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=37.52%, changed_vs_baseline=45.94%, conf_geo=0.4551, conf_unified=0.5314, q_geo=0.8019, q_unified=0.9630
+[Confidence] N=10000, mean=0.5314, median=0.5486, min=0.0005, max=0.9750
+[Parallax] N=10000, mean=2.976 deg, median=2.447 deg, <1deg=6.85%, <2deg=24.64%, <5deg=83.33%
+ 75%|███████▌  | 60/80 [01:56<00:31,  1.57s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.46it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.43it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.42it/s][A100%|██████████| 3/3 [00:01<00:00,  2.42it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.30it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.47it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.53it/s][A100%|██████████| 3/3 [00:00<00:00,  8.48it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=25.98%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=31.40%, changed_vs_baseline=36.90%, conf_geo=0.4555, conf_unified=0.5157, q_geo=0.8252, q_unified=0.9571
+[Confidence] N=10000, mean=0.5157, median=0.5252, min=0.0002, max=0.9636
+[Parallax] N=10000, mean=3.608 deg, median=3.058 deg, <1deg=4.77%, <2deg=22.64%, <5deg=65.14%
+ 76%|███████▋  | 61/80 [01:58<00:30,  1.59s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.70it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.80it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.79it/s][A100%|██████████| 3/3 [00:01<00:00,  2.78it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.57it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.61it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.41it/s][A100%|██████████| 3/3 [00:00<00:00,  8.44it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=31.83%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=37.32%, changed_vs_baseline=41.16%, conf_geo=0.4281, conf_unified=0.5023, q_geo=0.7954, q_unified=0.9632
+[Confidence] N=10000, mean=0.5023, median=0.5104, min=0.0004, max=0.9684
+[Parallax] N=10000, mean=4.148 deg, median=3.666 deg, <1deg=5.48%, <2deg=20.96%, <5deg=62.02%
+ 78%|███████▊  | 62/80 [01:59<00:28,  1.56s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.72it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.78it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.78it/s][A100%|██████████| 3/3 [00:01<00:00,  2.77it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  9.32it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  9.35it/s][A
+100%|██████████| 3/3 [00:00<00:00,  9.16it/s][A100%|██████████| 3/3 [00:00<00:00,  9.19it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=26.87%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=35.63%, changed_vs_baseline=38.84%, conf_geo=0.4453, conf_unified=0.5204, q_geo=0.7912, q_unified=0.9603
+[Confidence] N=10000, mean=0.5204, median=0.5301, min=0.0006, max=0.9872
+[Parallax] N=10000, mean=3.802 deg, median=3.358 deg, <1deg=8.83%, <2deg=26.11%, <5deg=71.65%
+ 79%|███████▉  | 63/80 [02:01<00:26,  1.53s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.74it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.81it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.84it/s][A100%|██████████| 3/3 [00:01<00:00,  2.83it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.64it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.61it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.61it/s][A100%|██████████| 3/3 [00:00<00:00,  8.60it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=16.74%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=31.07%, changed_vs_baseline=36.41%, conf_geo=0.4302, conf_unified=0.4895, q_geo=0.8026, q_unified=0.9399
+[Confidence] N=10000, mean=0.4895, median=0.5048, min=0.0004, max=0.9874
+[Parallax] N=10000, mean=4.768 deg, median=5.399 deg, <1deg=2.32%, <2deg=16.70%, <5deg=45.97%
+ 80%|████████  | 64/80 [02:02<00:24,  1.52s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.79it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.60it/s][A
+100%|██████████| 3/3 [00:01<00:00,  1.55it/s][A100%|██████████| 3/3 [00:01<00:00,  1.58it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  4.31it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  4.39it/s][A
+100%|██████████| 3/3 [00:00<00:00,  4.42it/s][A100%|██████████| 3/3 [00:00<00:00,  4.40it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=43.39%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=29.81%, changed_vs_baseline=42.09%, conf_geo=0.4938, conf_unified=0.5558, q_geo=0.8308, q_unified=0.9592
+[Confidence] N=10000, mean=0.5558, median=0.5850, min=0.0054, max=0.9781
+[Parallax] N=10000, mean=2.748 deg, median=2.432 deg, <1deg=16.21%, <2deg=37.53%, <5deg=97.26%
+ 81%|████████▏ | 65/80 [02:05<00:28,  1.87s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:01,  1.53it/s][A
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.92it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.21it/s][A100%|██████████| 3/3 [00:01<00:00,  2.06it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.96it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.35it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.49it/s][A100%|██████████| 3/3 [00:00<00:00,  8.40it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=39.26%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=33.06%, changed_vs_baseline=43.94%, conf_geo=0.5142, conf_unified=0.5659, q_geo=0.8417, q_unified=0.9551
+[Confidence] N=10000, mean=0.5659, median=0.6090, min=0.0013, max=0.9849
+[Parallax] N=10000, mean=3.223 deg, median=2.736 deg, <1deg=3.19%, <2deg=29.49%, <5deg=84.53%
+ 82%|████████▎ | 66/80 [02:07<00:26,  1.87s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.65it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.56it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.53it/s][A100%|██████████| 3/3 [00:01<00:00,  2.54it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.88it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.26it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.42it/s][A100%|██████████| 3/3 [00:00<00:00,  8.32it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=53.00%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=28.85%, changed_vs_baseline=53.21%, conf_geo=0.5203, conf_unified=0.5702, q_geo=0.8638, q_unified=0.9645
+[Confidence] N=10000, mean=0.5702, median=0.6137, min=0.0004, max=0.9626
+[Parallax] N=10000, mean=2.262 deg, median=1.832 deg, <1deg=22.46%, <2deg=57.61%, <5deg=97.97%
+ 84%|████████▍ | 67/80 [02:08<00:23,  1.79s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.53it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.52it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.60it/s][A100%|██████████| 3/3 [00:01<00:00,  2.58it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.87it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.88it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.90it/s][A100%|██████████| 3/3 [00:00<00:00,  7.88it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=37.78%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=30.07%, changed_vs_baseline=40.43%, conf_geo=0.4683, conf_unified=0.5321, q_geo=0.8103, q_unified=0.9452
+[Confidence] N=10000, mean=0.5321, median=0.5710, min=0.0001, max=0.9486
+[Parallax] N=10000, mean=3.686 deg, median=2.983 deg, <1deg=13.75%, <2deg=29.54%, <5deg=70.64%
+ 85%|████████▌ | 68/80 [02:10<00:20,  1.73s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.49it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.37it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.35it/s][A100%|██████████| 3/3 [00:01<00:00,  2.37it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.23it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.20it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.47it/s][A100%|██████████| 3/3 [00:00<00:00,  7.38it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=13.95%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=26.78%, changed_vs_baseline=27.60%, conf_geo=0.5129, conf_unified=0.5630, q_geo=0.8580, q_unified=0.9608
+[Confidence] N=10000, mean=0.5630, median=0.6053, min=0.0011, max=0.9751
+[Parallax] N=10000, mean=2.793 deg, median=2.799 deg, <1deg=20.00%, <2deg=38.85%, <5deg=90.75%
+ 86%|████████▋ | 69/80 [02:12<00:19,  1.74s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.42it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.44it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.55it/s][A100%|██████████| 3/3 [00:01<00:00,  2.52it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.60it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.61it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.62it/s][A100%|██████████| 3/3 [00:00<00:00,  8.60it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=48.53%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=28.76%, changed_vs_baseline=42.22%, conf_geo=0.5170, conf_unified=0.5705, q_geo=0.8595, q_unified=0.9708
+[Confidence] N=10000, mean=0.5705, median=0.5922, min=0.0024, max=0.9856
+[Parallax] N=10000, mean=2.648 deg, median=2.302 deg, <1deg=16.16%, <2deg=43.10%, <5deg=93.77%
+ 88%|████████▊ | 70/80 [02:13<00:16,  1.70s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.69it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.70it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.63it/s][A100%|██████████| 3/3 [00:01<00:00,  2.65it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.89it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.89it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.89it/s][A100%|██████████| 3/3 [00:00<00:00,  7.88it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=54.28%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=36.57%, changed_vs_baseline=49.06%, conf_geo=0.5143, conf_unified=0.5904, q_geo=0.8134, q_unified=0.9657
+[Confidence] N=10000, mean=0.5904, median=0.6178, min=0.0006, max=0.9851
+[Parallax] N=10000, mean=3.222 deg, median=2.981 deg, <1deg=3.63%, <2deg=14.59%, <5deg=88.58%
+ 89%|████████▉ | 71/80 [02:15<00:14,  1.66s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.36it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.29it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.34it/s][A100%|██████████| 3/3 [00:01<00:00,  2.33it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.24it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.24it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.37it/s][A100%|██████████| 3/3 [00:00<00:00,  7.33it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=58.08%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=42.08%, changed_vs_baseline=45.29%, conf_geo=0.4707, conf_unified=0.5507, q_geo=0.7895, q_unified=0.9606
+[Confidence] N=10000, mean=0.5507, median=0.5713, min=0.0014, max=0.9868
+[Parallax] N=10000, mean=4.224 deg, median=3.659 deg, <1deg=2.30%, <2deg=6.88%, <5deg=64.88%
+ 90%|█████████ | 72/80 [02:17<00:13,  1.69s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.49it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.49it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.58it/s][A100%|██████████| 3/3 [00:01<00:00,  2.55it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.64it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.63it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.63it/s][A100%|██████████| 3/3 [00:00<00:00,  8.62it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=19.91%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=31.00%, changed_vs_baseline=30.96%, conf_geo=0.4788, conf_unified=0.5325, q_geo=0.8437, q_unified=0.9606
+[Confidence] N=10000, mean=0.5325, median=0.5658, min=0.0025, max=0.9728
+[Parallax] N=10000, mean=5.479 deg, median=5.486 deg, <1deg=0.00%, <2deg=5.21%, <5deg=43.73%
+ 91%|█████████▏| 73/80 [02:18<00:11,  1.66s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.59it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.57it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.56it/s][A100%|██████████| 3/3 [00:01<00:00,  2.56it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.63it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.63it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.63it/s][A100%|██████████| 3/3 [00:00<00:00,  8.62it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=24.96%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=30.35%, changed_vs_baseline=28.34%, conf_geo=0.4861, conf_unified=0.5586, q_geo=0.8165, q_unified=0.9618
+[Confidence] N=10000, mean=0.5586, median=0.5898, min=0.0000, max=0.9826
+[Parallax] N=10000, mean=4.658 deg, median=4.547 deg, <1deg=0.22%, <2deg=8.31%, <5deg=71.36%
+ 92%|█████████▎| 74/80 [02:20<00:09,  1.64s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.58it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.60it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.63it/s][A100%|██████████| 3/3 [00:01<00:00,  2.62it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.84it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.86it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.67it/s][A100%|██████████| 3/3 [00:00<00:00,  7.71it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=44.02%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=35.11%, changed_vs_baseline=42.81%, conf_geo=0.4610, conf_unified=0.5593, q_geo=0.7601, q_unified=0.9543
+[Confidence] N=10000, mean=0.5593, median=0.5878, min=0.0003, max=0.9659
+[Parallax] N=10000, mean=4.442 deg, median=4.262 deg, <1deg=3.05%, <2deg=12.42%, <5deg=71.80%
+ 94%|█████████▍| 75/80 [02:21<00:08,  1.63s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.38it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.45it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.40it/s][A100%|██████████| 3/3 [00:01<00:00,  2.41it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  6.71it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  6.58it/s][A
+100%|██████████| 3/3 [00:00<00:00,  6.09it/s][A100%|██████████| 3/3 [00:00<00:00,  6.22it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=15.30%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=38.43%, changed_vs_baseline=37.62%, conf_geo=0.4334, conf_unified=0.5080, q_geo=0.7903, q_unified=0.9583
+[Confidence] N=10000, mean=0.5080, median=0.5108, min=0.0000, max=0.9752
+[Parallax] N=10000, mean=9.244 deg, median=7.676 deg, <1deg=0.01%, <2deg=0.71%, <5deg=6.52%
+ 95%|█████████▌| 76/80 [02:23<00:06,  1.69s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:01<00:03,  1.88s/it][A
+ 67%|██████▋   | 2/3 [00:04<00:02,  2.38s/it][A
+100%|██████████| 3/3 [00:04<00:00,  1.46s/it][A100%|██████████| 3/3 [00:04<00:00,  1.66s/it]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00, 10.09it/s][A100%|██████████| 3/3 [00:00<00:00, 10.09it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=14.16%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=34.21%, changed_vs_baseline=33.68%, conf_geo=0.4326, conf_unified=0.4966, q_geo=0.8124, q_unified=0.9535
+[Confidence] N=10000, mean=0.4966, median=0.5292, min=0.0012, max=0.9788
+[Parallax] N=10000, mean=11.099 deg, median=9.600 deg, <1deg=0.00%, <2deg=0.09%, <5deg=4.85%
+ 96%|█████████▋| 77/80 [02:29<00:08,  2.78s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  3.14it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  3.04it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.91it/s][A100%|██████████| 3/3 [00:01<00:00,  2.95it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.84it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.86it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.86it/s][A100%|██████████| 3/3 [00:00<00:00,  7.85it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=11.43%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=41.50%, changed_vs_baseline=43.26%, conf_geo=0.4541, conf_unified=0.5345, q_geo=0.7927, q_unified=0.9589
+[Confidence] N=10000, mean=0.5345, median=0.5754, min=0.0021, max=0.9852
+[Parallax] N=10000, mean=9.415 deg, median=8.475 deg, <1deg=0.00%, <2deg=0.04%, <5deg=5.94%
+ 98%|█████████▊| 78/80 [02:30<00:04,  2.38s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.48it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.50it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.50it/s][A100%|██████████| 3/3 [00:01<00:00,  2.49it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  7.20it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  7.29it/s][A
+100%|██████████| 3/3 [00:00<00:00,  7.54it/s][A100%|██████████| 3/3 [00:00<00:00,  7.44it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=2.65%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=26.76%, changed_vs_baseline=26.81%, conf_geo=0.4489, conf_unified=0.5099, q_geo=0.8252, q_unified=0.9554
+[Confidence] N=10000, mean=0.5099, median=0.5402, min=0.0012, max=0.9741
+[Parallax] N=10000, mean=8.102 deg, median=7.731 deg, <1deg=0.00%, <2deg=0.00%, <5deg=14.28%
+ 99%|█████████▉| 79/80 [02:32<00:02,  2.17s/it]
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  2.57it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  2.64it/s][A
+100%|██████████| 3/3 [00:01<00:00,  2.67it/s][A100%|██████████| 3/3 [00:01<00:00,  2.65it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 33%|███▎      | 1/3 [00:00<00:00,  8.66it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  8.65it/s][A
+100%|██████████| 3/3 [00:00<00:00,  8.66it/s][A100%|██████████| 3/3 [00:00<00:00,  8.64it/s]
+[Geo-Selection] lambda=1.00, tau=2.00 deg, changed=4.73%
+[Unified-Selection-v2] conf_lambda=1.00, changed_vs_geo=31.12%, changed_vs_baseline=30.71%, conf_geo=0.4501, conf_unified=0.4992, q_geo=0.8543, q_unified=0.9726
+[Confidence] N=10000, mean=0.4992, median=0.5056, min=0.0040, max=0.9637
+[Parallax] N=10000, mean=9.729 deg, median=9.009 deg, <1deg=0.00%, <2deg=0.10%, <5deg=13.48%
+100%|██████████| 80/80 [02:33<00:00,  1.98s/it]100%|██████████| 80/80 [02:33<00:00,  1.92s/it]
+N_splats_after_init: 955767
+Train 3DGS for 30000 iterations
+/usr/local/lib/python3.10/dist-packages/tqdm/rich.py:146: TqdmExperimentalWarning: rich is experimental/alpha
+  return tqdm_rich(range(*args), **kwargs)
+
+[ITER 500], #797431 gaussians, Evaluating test: L1=0.056546,  PSNR=20.117074, SSIM=0.767884, LPIPS_splat=0.326687 
+
+[ITER 500], #797431 gaussians, Evaluating train: L1=0.055494,  PSNR=20.133226, SSIM=0.778521, LPIPS_splat=0.317664 
+
+[ITER 1000], #797431 gaussians, Evaluating test: L1=0.042060,  PSNR=22.509519, SSIM=0.829362, LPIPS_splat=0.269488 
+
+[ITER 1000], #797431 gaussians, Evaluating train: L1=0.040534,  PSNR=22.750695, SSIM=0.838038, LPIPS_splat=0.260627 
+
+[ITER 1500], #797362 gaussians, Evaluating test: L1=0.035326,  PSNR=23.817069, SSIM=0.856063, LPIPS_splat=0.244975 
+
+[ITER 1500], #797362 gaussians, Evaluating train: L1=0.032824,  PSNR=24.385121, SSIM=0.868667, LPIPS_splat=0.231387 
+
+[ITER 2000], #792538 gaussians, Evaluating test: L1=0.031632,  PSNR=24.537236, SSIM=0.869903, LPIPS_splat=0.231449 
+
+[ITER 2000], #792538 gaussians, Evaluating train: L1=0.029727,  PSNR=25.154983, SSIM=0.879362, LPIPS_splat=0.219635 
+
+[ITER 2500], #779207 gaussians, Evaluating test: L1=0.029190,  PSNR=25.234831, SSIM=0.878203, LPIPS_splat=0.221877 
+
+[ITER 2500], #779207 gaussians, Evaluating train: L1=0.026905,  PSNR=25.958649, SSIM=0.888987, LPIPS_splat=0.208047 
+
+[ITER 3000] Saving Gaussians
+
+[ITER 3000] Saving Checkpoint
+
+[ITER 3000], #767241 gaussians, Evaluating test: L1=0.027655,  PSNR=25.655586, SSIM=0.883933, LPIPS_splat=0.215061 
+
+[ITER 3000], #767241 gaussians, Evaluating train: L1=0.025480,  PSNR=26.354455, SSIM=0.893096, LPIPS_splat=0.202522 
+
+[ITER 3228], #762283 gaussians, Evaluating test: L1=0.026704,  PSNR=25.946675, SSIM=0.886908, LPIPS_splat=0.212186 
+
+[ITER 3228], #762283 gaussians, Evaluating train: L1=0.024359,  PSNR=26.676910, SSIM=0.896726, LPIPS_splat=0.198529 
+
+[ITER 4228], #743137 gaussians, Evaluating test: L1=0.024446,  PSNR=26.644078, SSIM=0.896624, LPIPS_splat=0.202182 
+
+[ITER 4228], #743137 gaussians, Evaluating train: L1=0.022061,  PSNR=27.372015, SSIM=0.907041, LPIPS_splat=0.188058 
+
+[ITER 5228], #727620 gaussians, Evaluating test: L1=0.023147,  PSNR=27.092847, SSIM=0.901543, LPIPS_splat=0.196184 
+
+[ITER 5228], #727620 gaussians, Evaluating train: L1=0.021062,  PSNR=27.774514, SSIM=0.910689, LPIPS_splat=0.184015 
+
+[ITER 6228], #714165 gaussians, Evaluating test: L1=0.022153,  PSNR=27.387807, SSIM=0.903739, LPIPS_splat=0.192540 
+
+[ITER 6228], #714165 gaussians, Evaluating train: L1=0.020648,  PSNR=27.956088, SSIM=0.912250, LPIPS_splat=0.180176 
+
+[ITER 7000] Saving Gaussians
+
+[ITER 7000] Saving Checkpoint
+
+[ITER 7228], #701549 gaussians, Evaluating test: L1=0.021590,  PSNR=27.616913, SSIM=0.906647, LPIPS_splat=0.189696 
+
+[ITER 7228], #701549 gaussians, Evaluating train: L1=0.019670,  PSNR=28.244736, SSIM=0.915735, LPIPS_splat=0.177046 
+
+[ITER 8228], #687784 gaussians, Evaluating test: L1=0.021897,  PSNR=27.621539, SSIM=0.906382, LPIPS_splat=0.188966 
+
+[ITER 8228], #687784 gaussians, Evaluating train: L1=0.019864,  PSNR=28.263150, SSIM=0.915392, LPIPS_splat=0.176363 
+
+[ITER 9228], #671925 gaussians, Evaluating test: L1=0.020854,  PSNR=27.920801, SSIM=0.910168, LPIPS_splat=0.185027 
+
+[ITER 9228], #671925 gaussians, Evaluating train: L1=0.018575,  PSNR=28.663253, SSIM=0.920953, LPIPS_splat=0.171132 
+
+[ITER 10228], #654514 gaussians, Evaluating test: L1=0.020707,  PSNR=28.020375, SSIM=0.911344, LPIPS_splat=0.183014 
+
+[ITER 10228], #654514 gaussians, Evaluating train: L1=0.018565,  PSNR=28.731357, SSIM=0.921559, LPIPS_splat=0.169129 
+
+[ITER 11228], #636021 gaussians, Evaluating test: L1=0.020411,  PSNR=28.128193, SSIM=0.913484, LPIPS_splat=0.180098 
+
+[ITER 11228], #636021 gaussians, Evaluating train: L1=0.018013,  PSNR=28.899072, SSIM=0.924580, LPIPS_splat=0.166114 
+
+[ITER 12228], #618644 gaussians, Evaluating test: L1=0.020237,  PSNR=28.243503, SSIM=0.914678, LPIPS_splat=0.178350 
+
+[ITER 12228], #618644 gaussians, Evaluating train: L1=0.018060,  PSNR=28.975137, SSIM=0.925503, LPIPS_splat=0.164328 
+
+[ITER 13228], #603378 gaussians, Evaluating test: L1=0.019971,  PSNR=28.312731, SSIM=0.915393, LPIPS_splat=0.177334 
+
+[ITER 13228], #603378 gaussians, Evaluating train: L1=0.017583,  PSNR=29.105765, SSIM=0.926691, LPIPS_splat=0.162969 
+
+[ITER 14228], #589760 gaussians, Evaluating test: L1=0.019655,  PSNR=28.411859, SSIM=0.916316, LPIPS_splat=0.175881 
+
+[ITER 14228], #589760 gaussians, Evaluating train: L1=0.017292,  PSNR=29.205583, SSIM=0.928094, LPIPS_splat=0.160832 
+
+[ITER 15000] Saving Gaussians
+
+[ITER 15000] Saving Checkpoint
+
+[ITER 15228], #580180 gaussians, Evaluating test: L1=0.019931,  PSNR=28.403900, SSIM=0.916817, LPIPS_splat=0.173103 
+
+[ITER 15228], #580180 gaussians, Evaluating train: L1=0.017422,  PSNR=29.272181, SSIM=0.929653, LPIPS_splat=0.157331 
+
+[ITER 16228], #580180 gaussians, Evaluating test: L1=0.019256,  PSNR=28.614069, SSIM=0.918298, LPIPS_splat=0.170259 
+
+[ITER 16228], #580180 gaussians, Evaluating train: L1=0.016727,  PSNR=29.535712, SSIM=0.931544, LPIPS_splat=0.153859 
+
+[ITER 17228], #580180 gaussians, Evaluating test: L1=0.019167,  PSNR=28.626462, SSIM=0.918739, LPIPS_splat=0.169303 
+
+[ITER 17228], #580180 gaussians, Evaluating train: L1=0.016524,  PSNR=29.561387, SSIM=0.932828, LPIPS_splat=0.151905 
+
+[ITER 18228], #580180 gaussians, Evaluating test: L1=0.018690,  PSNR=28.780472, SSIM=0.920030, LPIPS_splat=0.167564 
+
+[ITER 18228], #580180 gaussians, Evaluating train: L1=0.016146,  PSNR=29.725768, SSIM=0.934197, LPIPS_splat=0.150127 
+
+[ITER 19228], #580180 gaussians, Evaluating test: L1=0.018562,  PSNR=28.839517, SSIM=0.920352, LPIPS_splat=0.167005 
+
+[ITER 19228], #580180 gaussians, Evaluating train: L1=0.016048,  PSNR=29.788055, SSIM=0.934321, LPIPS_splat=0.149621 
+
+[ITER 20228], #580180 gaussians, Evaluating test: L1=0.018618,  PSNR=28.817773, SSIM=0.920133, LPIPS_splat=0.166932 
+
+[ITER 20228], #580180 gaussians, Evaluating train: L1=0.015946,  PSNR=29.881932, SSIM=0.935743, LPIPS_splat=0.147627 
+
+[ITER 21228], #580180 gaussians, Evaluating test: L1=0.018174,  PSNR=28.951146, SSIM=0.921579, LPIPS_splat=0.165371 
+
+[ITER 21228], #580180 gaussians, Evaluating train: L1=0.015670,  PSNR=29.931252, SSIM=0.935572, LPIPS_splat=0.147526 
+
+[ITER 22228], #580180 gaussians, Evaluating test: L1=0.018348,  PSNR=28.942135, SSIM=0.921600, LPIPS_splat=0.164778 
+
+[ITER 22228], #580180 gaussians, Evaluating train: L1=0.015646,  PSNR=30.017342, SSIM=0.936736, LPIPS_splat=0.146558 
+
+[ITER 23228], #580180 gaussians, Evaluating test: L1=0.018293,  PSNR=28.938742, SSIM=0.921503, LPIPS_splat=0.164845 
+
+[ITER 23228], #580180 gaussians, Evaluating train: L1=0.015762,  PSNR=29.951416, SSIM=0.936487, LPIPS_splat=0.146199 
+
+[ITER 24228], #580180 gaussians, Evaluating test: L1=0.018186,  PSNR=28.996831, SSIM=0.921615, LPIPS_splat=0.164017 
+
+[ITER 24228], #580180 gaussians, Evaluating train: L1=0.015344,  PSNR=30.144675, SSIM=0.937907, LPIPS_splat=0.144368 
+
+[ITER 25228], #580180 gaussians, Evaluating test: L1=0.017880,  PSNR=29.057831, SSIM=0.922146, LPIPS_splat=0.163826 
+
+[ITER 25228], #580180 gaussians, Evaluating train: L1=0.015007,  PSNR=30.268914, SSIM=0.938872, LPIPS_splat=0.143250 
+
+[ITER 26228], #580180 gaussians, Evaluating test: L1=0.017972,  PSNR=29.078208, SSIM=0.922426, LPIPS_splat=0.163380 
+
+[ITER 26228], #580180 gaussians, Evaluating train: L1=0.015085,  PSNR=30.288002, SSIM=0.939164, LPIPS_splat=0.143175 
+
+[ITER 27228], #580180 gaussians, Evaluating test: L1=0.017794,  PSNR=29.109341, SSIM=0.922597, LPIPS_splat=0.162776 
+
+[ITER 27228], #580180 gaussians, Evaluating train: L1=0.014792,  PSNR=30.371712, SSIM=0.939440, LPIPS_splat=0.142369 
+
+[ITER 28228], #580180 gaussians, Evaluating test: L1=0.017880,  PSNR=29.107315, SSIM=0.922359, LPIPS_splat=0.163078 
+
+[ITER 28228], #580180 gaussians, Evaluating train: L1=0.014717,  PSNR=30.422315, SSIM=0.940090, LPIPS_splat=0.141891 
+
+[ITER 29228], #580180 gaussians, Evaluating test: L1=0.017592,  PSNR=29.189787, SSIM=0.922883, LPIPS_splat=0.162532 
+
+[ITER 29228], #580180 gaussians, Evaluating train: L1=0.014491,  PSNR=30.490127, SSIM=0.940646, LPIPS_splat=0.141224 
+
+[ITER 30000] Saving Gaussians
+
+[ITER 30000] Saving Checkpoint
+Train gaussians 100% ━━━━━━━━━━━━━━ 30,000/30,000 [ 1:00:44 < 0:00:00 , ? it/s ]
+
+Training complete.

@@ -159,8 +159,10 @@ Counter 显示了方法的场景及指标依赖性。不能选择性忽略 PSNR 
 
 **训练日志：**
 
-- Baseline：`/workspace/outputs/counter_seed228_baseline.log`
-- Unified v2：`/workspace/outputs/counter_seed228_unified_v2_relconf.log`
+- Baseline：`/workspace/outputs/counter_seed228_baseline.log` → [仓库中的完整原始日志](../workspace/outputs/counter_seed228_baseline.log)
+- Unified v2：`/workspace/outputs/counter_seed228_unified_v2_relconf.log` → [仓库中的完整原始日志](../workspace/outputs/counter_seed228_unified_v2_relconf.log)
+
+仓库日志按容器内路径镜像（去掉开头 `/`），与服务器源文件逐字节一致。同步核验时间、字节数和 SHA256 见 [日志同步核验记录](../data/log-sync-manifest.json)。
 
 **模型目录：**
 

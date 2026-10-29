@@ -43,8 +43,17 @@
 
 ## 容器内日志路径
 
-- Baseline：`/workspace/outputs/counter_seed228_baseline.log`
-- Unified v2：`/workspace/outputs/counter_seed228_unified_v2_relconf.log`
+- Baseline：`/workspace/outputs/counter_seed228_baseline.log` → [完整原始日志](workspace/outputs/counter_seed228_baseline.log)
+- Unified v2：`/workspace/outputs/counter_seed228_unified_v2_relconf.log` → [完整原始日志](workspace/outputs/counter_seed228_unified_v2_relconf.log)
+
+日志同步核验时间：**2026-10-29 09:05:20（Asia/Shanghai）**。两份仓库副本均与 `edgs-v1` 中源文件的字节数、SHA256 一致，未经截断、换行转换或内容清洗。此时间是日志同步核验时间，训练进度与 GPU 状态仍对应上文注明的 08:33 核验快照。
+
+| 日志 | 字节数 | SHA256 |
+| --- | ---: | --- |
+| Baseline | 65905 | `86c01f2e2dea15bccb6b7816b4236d2514eb2168abc6bd47a04dff04f2330d21` |
+| Unified v2 | 99045 | `9464a62b63a07b7b1b94a980f64dac8df5e962a1d0288d88cbda37fae95a7d32` |
+
+完整路径映射和源文件修改时间见 [日志同步核验记录](data/log-sync-manifest.json)。之后每次进度检查均同时核验、同步对应日志。
 
 ## 进度时间线
 

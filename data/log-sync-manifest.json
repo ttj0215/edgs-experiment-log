@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-29T01:05:20.193790+00:00",
+  "source_container": "edgs-v1",
+  "repository_path_rule": "Remove the leading slash from the container path",
+  "byte_preserving_copy": true,
+  "files": [
+    {
+      "source_path": "/workspace/outputs/counter_seed228_baseline.log",
+      "repository_path": "workspace/outputs/counter_seed228_baseline.log",
+      "bytes": 65905,
+      "sha256": "86c01f2e2dea15bccb6b7816b4236d2514eb2168abc6bd47a04dff04f2330d21",
+      "source_modified_utc": "2026-10-28T09:38:00.626006+00:00"
+    },
+    {
+      "source_path": "/workspace/outputs/counter_seed228_unified_v2_relconf.log",
+      "repository_path": "workspace/outputs/counter_seed228_unified_v2_relconf.log",
+      "bytes": 99045,
+      "sha256": "9464a62b63a07b7b1b94a980f64dac8df5e962a1d0288d88cbda37fae95a7d32",
+      "source_modified_utc": "2026-10-28T10:45:28.978739+00:00"
+    }
+  ]
+}
