@@ -6,7 +6,7 @@
 
 ## 当前状态
 
-截至北京时间 **2026-10-29 08:33** 的服务器只读核验，当前计划内 **14 组正式实验已完成**：Garden、Bicycle、Bonsai 各四方法，共 12 组；Counter 的 Baseline 与 Unified v2，共 2 组。当时没有训练进程，GPU 空闲。这是已核验的时间点快照。
+截至北京时间 **2026-10-29 09:13** 的服务器只读核验，当前计划内 **14 组正式实验已完成**：Garden、Bicycle、Bonsai 各四方法，共 12 组；Counter 的 Baseline 与 Unified v2，共 2 组。当时没有训练进程，GPU 空闲。这是已核验的时间点快照。
 
 Counter 在 seed=228、ITER 29228、Evaluating test 下的正式结果：
 
